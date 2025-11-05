@@ -4,8 +4,8 @@
 set RECORDING_FOLDER=C:/StreamloopRec
 set loopcount=10200
 set myvalue=0
-set /p URL=Enter URL: (aquí va el enlace)
-set /p KEY=Enter KEY: (se acuerdan de que aquí las keys se componen como KID:KEY?, aquí solo se debe poner la parte del "KEY", no la clave entera)
+set /p URL=Enter URL:
+set /p KEY=Enter KEY (as on KID:KEY): 
 set /p NAME=Enter Filename:
 
 :: Make sure the output folder actually exists
