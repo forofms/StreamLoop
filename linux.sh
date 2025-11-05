@@ -49,3 +49,4 @@ done
 
 # Pause at the end (equivalent to Windows pause)
 read -p "Press Enter to exit..."
+

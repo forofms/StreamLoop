@@ -24,8 +24,9 @@ if not exist "%BASE_PATH%\%NAME%" (
 :: ---------------------------------------
 :loop
 
-:: Get timestamp via PowerShell (reliable + format-safe)
-for /f %%A in ('powershell -NoLogo -NoProfile -Command "(Get-Date).ToString("yyyyMMdd-HHmmss")"') do set "STAMP=%%A"
+:: Get timestamp via PowerShell (safe)
+for /f %%A in ('powershell -NoLogo -NoProfile -Command "Get-Date -Format yyyyMMdd-HHmmss"') do set "STAMP=%%A"
+
 
 set /a COUNTER+=1
 
