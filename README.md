@@ -146,5 +146,4 @@ Incluye automatización de nombres por fecha/hora, bucles para reconexión autom
 > 👥 Proyecto mantenido por la comunidad de **ForoMedios.com**
 > Únete aquí → [https://discord.foromedios.com](https://discord.foromedios.com)
 
-```
 
