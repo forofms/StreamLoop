@@ -1,6 +1,6 @@
 @echo off
 :: Initial Variables
-:: You can modify this variable for specifying the folder where StreamLoop should record to.
+:: Here you can modify the variable for specifying the folder where StreamLoop will save its recordings to.
 set RECORDING_FOLDER=C:/StreamloopRec
 set loopcount=10200
 set myvalue=0
