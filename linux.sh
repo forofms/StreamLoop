@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Initial Variables
+rec_path="$HOME/StreamloopRec" # Here you can modify the variable for specifying the folder where StreamLoop will save its recordings to.
 loopcount=10200
 myvalue=0
 
@@ -34,10 +35,10 @@ fullstamp="${YYYY}-${MM}-${DD}_${HH}-${Min}-${Sec}"
 ((myvalue++))
 
 # Create directory if it doesn't exist
-mkdir -p "AJ_Archivos/${NAME}"
-
+mkdir -p "${rec_path}/${NAME}"
+pathoutput="${rec_path}/${NAME}"
 # Start the stream
-streamlink "$URL" best -o "AJ_Archivos/${NAME}/${datestamp}-${timestamp}.ts"
+streamlink "$URL" best -o "${pathoutput}/${datestamp}-${timestamp}.ts"
 
 # Alternative command (commented out)
 # streamlink "$URL" best -o "AJ_Archivos/${NAME}_${myvalue}.ts"
